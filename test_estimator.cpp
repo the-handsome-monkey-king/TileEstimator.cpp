@@ -53,7 +53,7 @@ long get_long(std::string *prompt) {
   }
 }
 
-int get_positive_long(std::string *prompt) {
+long get_positive_long(std::string *prompt) {
   int l = get_long(prompt);
   while(l< 0) {
     std::cout << "Input must be positive. Please try again.\n";
